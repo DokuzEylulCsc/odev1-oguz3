@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ibrahım Oğuzhan ULUKAYA 2018280072</title>
+</head>
+<body>
+<h2>Ibrahım Oğuzhan ULUKAYA <br> 2018280072</h2>
+<h2>2019 Güz Döneminin ilk ödevi</h2>
+<label>Metin kutusu 1</label>
+<input type='Number' id='id1' />
+<br>
+<label>Metin kutusu 2</label>
+<input type='Number' id='id2' />
+<br><br>
+<input type="button" id="tpl" value="Topla">
+
+<div id="sonuc"></div>
+
+ 
+ <script>
+ 
+ 
+ tpl.onclick=function add() 
+ {
+	  var s1 = document.getElementById("id1").value;
+      var s2 = document.getElementById("id2").value;
+      
+	  s1=parseInt(s1);
+	  s2=parseInt(s2);
+	  
+	  console.log(typeof s1);
+	  console.log(typeof s2);
+	  
+	  
+	  var s3	  = (s1 + s2);
+	  
+	  alert("Toplam:" +s3);
+	 
+	
+ }
+ 
+ </script>
+
+<br><br>
+<label>Metin kutusu 3</label>
+<input type='text' id='id3' />
+<br>
+<label>Metin kutusu 4</label>
+<input type='text' id='id4' />
+<br><br>
+<input type="button" id="yap" value="Yapıştır">
+
+<div id="sonuc"></div>
+  
+  <script>
+  
+  var s4=document.getElementById("id3");
+  var s5=document.getElementById("id4");
+  
+  yap.onclick=function()
+  {
+	   alert("Sonuç:" + s4.value + s5.value);
+	  
+	  
+	  
+  }
+  
+  </script>
+
+</body>
+</html>
